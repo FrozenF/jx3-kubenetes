@@ -5,14 +5,10 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
-    devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
-    gitKind: github
-    gitName: github
-    gitServer: https://github.com
+    environmentGitOwner: farih
+    gitKind: bitbucketserver
+    gitName: bs
+    gitServer: https://bitbucket.btech.id
     provider: kubernetes
     registry: ghcr.io
   environments:
@@ -20,7 +16,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "jenkinsx.btech.id"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
